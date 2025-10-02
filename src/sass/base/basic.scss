@@ -1,3 +1,5 @@
+@use "/src/sass/base/variables.scss" as *;
+
 /* :root {
     line-height: 1.5;
 } */
@@ -32,4 +34,10 @@ h5 {
 img {
     display: block;
     max-inline-size: 100%;
+}
+
+html {
+    font-family: "Barlow", sans-serif;
+    scroll-behavior: smooth;
+    color: $dark;
 }

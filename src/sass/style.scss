@@ -1,15 +1,10 @@
 @use "/src/sass/libs/modern-normalize.css";
+@use "/src/sass/base/basic.scss";
 @use "/src/sass/libs/fontello.css";
-@use "/src/sass/base/reset-some-values.css";
 
 @use "/src/sass/base/variables.scss" as *;
 
-html {
-    font-family: "Barlow", sans-serif;
-    scroll-behavior: smooth;
-    color: $dark;
-}
-
 h1 {
+    color: blue;
     font-size: 32px;
 }
