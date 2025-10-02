@@ -1,5 +1,5 @@
-import '../sass/modern-normalize.css'
-import '../sass/reset-some-values.css'
-import '../sass/fontello.css'
+import '/src/sass/modern-normalize.css'
+import '/src/sass/reset-some-values.css'
+import '/src/sass/fontello.css'
 
-import '../sass/style.scss'
+import '/src/sass/style.scss'
