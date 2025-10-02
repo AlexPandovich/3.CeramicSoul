@@ -33,8 +33,3 @@ img {
     display: block;
     max-inline-size: 100%;
 }
-
-html {
-    font-family: "Barlow", sans-serif;
-    scroll-behavior: smooth;
-}
