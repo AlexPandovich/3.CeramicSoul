@@ -1,0 +1,26 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.works {
+    padding-top: 60px;
+    &__img {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    &__buttons-wrapper {
+        margin: 0 auto;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        width: 76px;
+        column-gap: 12px;
+    }
+    &__button {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: $dark;
+    }
+    &__button--selected {
+        background-color: $ceramic;
+    }
+}

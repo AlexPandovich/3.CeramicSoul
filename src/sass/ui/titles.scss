@@ -1,8 +1,27 @@
 @use "/src/sass/base/variables.scss" as *;
 @use "/src/sass/base/mixins.scss" as *;
 
+@mixin title-base {
+    color: $dark;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .title-h1-italic {
-    @include title;
+    @include title-base;
     font-size: 24px;
     font-style: italic;
+}
+
+.title-h2 {
+    @include title-base;
+    font-size: 32px;
+}
+
+.title-h3 {
+    @include title-base;
+    font-size: 20px;
 }

@@ -1,0 +1,32 @@
+.form-block {
+    padding-top: 60px;
+    .question-form {
+        margin-top: 60px;
+        font-size: 14px;
+        &__label {
+            display: block;
+        }
+        &__input {
+            display: block;
+            width: 100%;
+            max-width: 340px;
+        }
+
+        textarea {
+            width: 100%;
+            max-width: 340px;
+            height: 130px;
+        }
+        &__checkbox {
+            margin-top: 20px;
+            display: block;
+            input {
+                margin-right: 15px;
+                // display: inline-block;
+            }
+        }
+        &__button {
+            margin-top: 20px;
+        }
+    }
+}

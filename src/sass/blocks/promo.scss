@@ -1,3 +1,5 @@
+@use "/src/sass/base/mixins.scss" as *;
+
 .promo {
     padding-top: 50px;
 
@@ -10,7 +12,7 @@
         display: block;
         margin: 40px auto 0 auto;
         width: 270px;
-        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+        @include img-shadow;
     }
     &__btn {
         margin: 0 auto;
