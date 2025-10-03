@@ -1,8 +1,11 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    .header__first-line {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .burger {
         row-gap: 10px;
         place-self: start;
@@ -38,6 +41,34 @@
             width: 20px;
             height: 20px;
             text-align: center;
+        }
+    }
+    &__nav {
+        display: none;
+        margin-top: 20px;
+        ul {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            column-gap: 30px;
+        }
+    }
+    &__nav-link,
+    &__nav-link:visited {
+        font-size: 20px;
+        color: $dark;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        .burger {
+            visibility: hidden;
+        }
+        &__nav {
+            display: block;
         }
     }
 }

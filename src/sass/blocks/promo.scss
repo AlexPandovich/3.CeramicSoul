@@ -3,19 +3,48 @@
 .promo {
     padding-top: 50px;
 
+    .promo__wrapper {
+        margin-top: 50px;
+    }
+
     &__title {
-        margin-block-start: 50px;
         padding-inline: 5px;
     }
 
+    &__cta {
+        margin-top: 40px;
+    }
     &__img {
         display: block;
-        margin: 40px auto 0 auto;
+        margin: 0 auto;
         width: 270px;
         @include img-shadow;
     }
     &__btn {
         margin: 0 auto;
         margin-top: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .promo {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+        &__title {
+            margin-left: 71px;
+            text-align: left;
+        }
+        &__cta {
+            margin-top: 0;
+        }
+        &__img {
+            width: 230px;
+        }
+        &__title {
+            margin-bottom: 68px;
+        }
     }
 }
