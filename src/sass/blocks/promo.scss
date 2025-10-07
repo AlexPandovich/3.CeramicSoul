@@ -3,7 +3,7 @@
 .promo {
     padding-top: 50px;
 
-    .promo__wrapper {
+    &__wrapper {
         margin-top: 50px;
     }
 
@@ -66,6 +66,33 @@
         &__title {
             margin-left: auto;
             margin-right: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .promo {
+        height: 900px;
+        &__main-img {
+            width: 640px;
+            height: 900px;
+        }
+        &__img {
+            width: 330px;
+            height: 460px;
+        }
+        &__wrapper {
+            margin-top: 80px;
+        }
+        &__btn {
+            margin-top: 50px;
+        }
+        &__btn {
+            width: 330px;
+            max-width: 330px;
+        }
+        &__title {
+            margin-bottom: 110px;
         }
     }
 }

@@ -24,3 +24,9 @@
         background-color: $ceramic;
     }
 }
+
+@media screen and (min-width: 1920px) {
+    .works {
+        padding-top: 100px;
+    }
+}
