@@ -46,5 +46,26 @@
         &__title {
             margin-bottom: 68px;
         }
+        &__main-img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .promo {
+        position: relative;
+        &__main-img {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 450px;
+            height: 633px;
+        }
+        &__title {
+            margin-left: auto;
+            margin-right: 15px;
+        }
     }
 }

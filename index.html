@@ -46,11 +46,14 @@
                         </ul>
                     </nav>
                 </div>
-
+                <img
+                    src="/src/img/promo/potter.jpg"
+                    alt=""
+                    class="promo__main-img"
+                />
                 <div class="promo__wrapper">
                     <h1 class="title-h1-italic promo__title">
-                        Make your dream come true <br />
-                        or decorate your home
+                        Make your dream come true <br />or decorate your home
                     </h1>
 
                     <div class="promo__cta">
@@ -109,44 +112,65 @@
         <section class="form-block">
             <div class="container">
                 <h2 class="title-h2">get in touch</h2>
-                <form action="" class="question-form">
-                    <label class="question-form__label" for="name">Name:</label>
-                    <input
-                        class="question-form__input"
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
+
+                <div class="form-block__wrapper">
+                    <img
+                        src="/src/img/form/tea.jpg"
+                        alt=""
+                        class="form-block__img"
                     />
+                    <form action="" class="question-form">
+                        <img
+                            src="/src/img/form/vase.png"
+                            alt=""
+                            class="question-form__img"
+                        />
+                        <div class="question-form__wrapper">
+                            <div class="question-form__item">
+                                <label class="question-form__label" for="name"
+                                    >Name:</label
+                                >
+                                <input
+                                    class="question-form__input"
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                />
+                            </div>
 
-                    <label class="question-form__label" for="email"
-                        >Email:</label
-                    >
-                    <input
-                        class="question-form__input"
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                    />
+                            <div class="question-form__item">
+                                <label class="question-form__label" for="email"
+                                    >Email:</label
+                                >
+                                <input
+                                    class="question-form__input"
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                />
+                            </div>
+                        </div>
 
-                    <label class="question-form__label" for="question"
-                        >Your question:</label
-                    >
-                    <textarea id="question" name="question"></textarea>
+                        <label class="question-form__label" for="question"
+                            >Your question:</label
+                        >
+                        <textarea id="question" name="question"></textarea>
 
-                    <label class="question-form__checkbox">
-                        <input type="checkbox" name="terms" required />
-                        I agree with the terms
-                    </label>
+                        <label class="question-form__checkbox">
+                            <input type="checkbox" name="terms" required />
+                            I agree with the terms
+                        </label>
 
-                    <button
-                        type="submit"
-                        class="btn-form question-form__button"
-                    >
-                        send request
-                    </button>
-                </form>
+                        <button
+                            type="submit"
+                            class="btn-form question-form__button"
+                        >
+                            send request
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
         <section class="works">

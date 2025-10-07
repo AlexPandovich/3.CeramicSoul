@@ -28,3 +28,21 @@
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .about {
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            :first-child {
+                width: 436px;
+            }
+        }
+        &__item {
+            &-img {
+                height: 250px;
+            }
+        }
+    }
+}
