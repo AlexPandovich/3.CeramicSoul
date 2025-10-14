@@ -24,6 +24,9 @@
         margin: 0 auto;
         margin-top: 18px;
     }
+    &__main-img {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -45,9 +48,6 @@
         }
         &__title {
             margin-bottom: 68px;
-        }
-        &__main-img {
-            display: none;
         }
     }
 }
@@ -73,6 +73,7 @@
 @media screen and (min-width: 1920px) {
     .promo {
         height: 900px;
+        padding-top: 40px;
         &__main-img {
             width: 640px;
             height: 900px;
@@ -87,10 +88,7 @@
         &__btn {
             margin-top: 50px;
         }
-        &__btn {
-            width: 330px;
-            max-width: 330px;
-        }
+
         &__title {
             margin-bottom: 110px;
         }

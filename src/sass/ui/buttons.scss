@@ -11,6 +11,7 @@
     text-transform: uppercase;
     font-size: 20px;
     display: block;
+    cursor: pointer;
 }
 
 .btn-default {
@@ -19,6 +20,29 @@
     width: 100%;
     max-width: 230px;
     height: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+    .btn-default {
+        &:hover {
+            background-color: $dark;
+            color: $light;
+        }
+        &:active {
+            background: rgba(217, 217, 217, 0.1);
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4) inset;
+            color: $dark;
+            border: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .btn-default {
+        width: 330px;
+        height: 60px;
+        max-width: 330px;
+    }
 }
 
 .btn-form {
