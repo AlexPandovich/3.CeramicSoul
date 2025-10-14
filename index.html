@@ -123,19 +123,22 @@
             <div class="container">
                 <h2 class="title-h2">get in touch</h2>
 
-                <div class="form-block__wrapper">
+                <div class="form-block__wrapper pure-g">
                     <img
                         src="/src/img/form/tea.jpg"
                         alt=""
-                        class="form-block__img"
+                        class="form-block__img pure-u-xl-1-2 pure-u-xxl-2-5"
                     />
-                    <form action="" class="question-form">
+                    <form
+                        action=""
+                        class="question-form pure-u-1 pure-u-xl-1-2 pure-u-xxl-3-5"
+                    >
                         <img
                             src="/src/img/form/vase.png"
                             alt=""
                             class="question-form__img"
                         />
-                        <div class="question-form__wrapper">
+                        <fieldset class="question-form__wrapper">
                             <div class="question-form__item">
                                 <label class="question-form__label" for="name"
                                     >Name:</label
@@ -145,6 +148,7 @@
                                     type="text"
                                     id="name"
                                     name="name"
+                                    placeholder="Name"
                                     required
                                 />
                             </div>
@@ -158,24 +162,36 @@
                                     type="email"
                                     id="email"
                                     name="email"
+                                    placeholder="Email"
                                     required
                                 />
                             </div>
-                        </div>
+                        </fieldset>
 
                         <label class="question-form__label" for="question"
                             >Your question:</label
                         >
-                        <textarea id="question" name="question"></textarea>
+                        <textarea
+                            class="question-form__textarea"
+                            id="question"
+                            name="question"
+                            placeholder="Question"
+                            required
+                        ></textarea>
 
-                        <label class="question-form__checkbox">
-                            <input type="checkbox" name="terms" required />
+                        <label class="question-form__checkbox-label">
+                            <input
+                                class="question-form__checkbox"
+                                type="checkbox"
+                                name="terms"
+                                required
+                            />
                             I agree with the terms
                         </label>
 
                         <button
                             type="submit"
-                            class="btn-form question-form__button"
+                            class="btn-send question-form__button"
                         >
                             send request
                         </button>
