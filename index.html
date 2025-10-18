@@ -202,20 +202,36 @@
         <section class="works">
             <div class="container">
                 <h2 class="title-h2">check out our works</h2>
-                <img
-                    src="/src/img/works/tea-3.jpg"
-                    alt="tea ceremony"
-                    class="works__img"
-                />
-                <div class="works__buttons-wrapper">
-                    <a
-                        href="#"
-                        class="works__button works__button--selected"
-                    ></a>
-                    <a href="#" class="works__button"></a>
-                    <a href="#" class="works__button"></a>
-                    <a href="#" class="works__button"></a>
+                <div class="works__wrapper">
+                    <div class="swiper works__slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="/src/img/works/tea-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/img/works/tea-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/img/works/tea-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/src/img/works/tea-2.jpg" />
+                            </div>
+                        </div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <span class="icon-left-open works__navigation"></span>
+                    <span class="icon-right-open works__navigation"></span>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
             </div>
         </section>
 
