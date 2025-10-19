@@ -37,4 +37,17 @@ try {
 
 }
 
+const burger = document.querySelector(".burger"),
+    close = document.querySelector(".aside__cross"),
+    menu = document.querySelector(".aside");
+
+burger.addEventListener("click", () => {
+    menu.classList.add("aside--active");
+    document.body.style.overflow = "hidden";
+});
+
+close.addEventListener("click", () => {
+    menu.classList.remove("aside--active");
+    document.body.style.overflow = "";
+});
 

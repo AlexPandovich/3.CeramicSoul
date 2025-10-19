@@ -1,0 +1,62 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.aside {
+    width: 100vw;
+    height: 100vh;
+    background-color: $light;
+    padding-top: 50px;
+    position: fixed;
+    left: -100vw;
+    top: 0;
+    transition: all 0.5s;
+    opacity: 0;
+    &--active {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    &__cross {
+        margin-left: 10px;
+        width: 14px;
+        height: 14px;
+        position: relative;
+        // border: 1px solid $dark;
+
+        &-item {
+            display: block;
+            width: 18px;
+            height: 1px;
+            background-color: $dark;
+
+            &1 {
+                position: absolute;
+                transform: translateY(5px) translatex(-3px) rotate(45deg);
+            }
+
+            &2 {
+                position: absolute;
+                transform: translateY(5px) translatex(-3px) rotate(-45deg);
+            }
+        }
+    }
+    .aside-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 50px;
+    }
+    .aside-menu__item {
+        font-size: 20px;
+        margin-left: 24px;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $dark;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .aside {
+        display: none;
+    }
+}
