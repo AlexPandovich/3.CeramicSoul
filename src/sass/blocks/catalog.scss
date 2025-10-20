@@ -1,0 +1,103 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+.catalog {
+    padding-top: 50px;
+    &__title {
+        margin-top: 60px;
+    }
+    &__tabs {
+        margin-top: 60px;
+        border: 1px solid $dark;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        row-gap: 13px;
+        padding: 13px 35px;
+    }
+    &__tab {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0;
+        border: none;
+        background: none;
+        position: relative;
+        &--active::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: $dark;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    &__content {
+        margin: 60px 0;
+    }
+    &__content-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    &__card {
+        border: 1px solid $dark;
+        width: 340px;
+        margin: 0 auto;
+        @include img-shadow;
+        font-weight: 500;
+
+        &-header {
+            margin-top: 11px;
+            margin-left: 12px;
+        }
+        &-price {
+            margin-left: 12px;
+            margin-top: 8px;
+            margin-bottom: 17px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .catalog {
+        &__content-item {
+            padding: 10px;
+            position: relative;
+            &::before {
+                content: "";
+                width: 200px;
+                height: 1px;
+                background-color: $dark;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            &::after {
+                content: "";
+                width: 1px;
+                height: 200px;
+                background-color: $dark;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        &__tabs {
+            width: 480px;
+        }
+        &__card {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .catalog {
+        &__content-item {
+            padding: 25px;
+        }
+    }
+}
