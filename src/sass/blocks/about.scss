@@ -13,11 +13,58 @@
     }
 }
 
+.findus {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    &__wrapper {
+        margin-top: 60px;
+        padding: 0 29px;
+        iframe {
+            width: 100%;
+            height: 206px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .findus {
+        &__wrapper {
+            iframe {
+                height: 400px;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1200px) {
+    .findus {
+        &__wrapper {
+            padding: 0;
+            iframe {
+                height: 608px;
+                width: 663px;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
     .about {
         &__text {
             margin-top: 0;
             padding-left: 20px;
+        }
+    }
+    .findus {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        &__wrapper {
+            iframe {
+                height: 604px;
+                width: 801px;
+            }
         }
     }
 }
