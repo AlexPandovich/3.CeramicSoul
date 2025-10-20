@@ -1,0 +1,23 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.about {
+    &__title {
+        margin-top: 60px;
+    }
+    &__wrapper {
+        margin-top: 60px;
+    }
+    &__text {
+        margin-top: 35px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about {
+        &__text {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+    }
+}

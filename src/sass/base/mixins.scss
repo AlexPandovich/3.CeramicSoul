@@ -4,3 +4,21 @@
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
+@mixin decoration-corner {
+    &::before,
+    &::after {
+        content: "";
+        background-color: $dark;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &::after {
+        width: 1px;
+        height: 200px;
+    }
+    &::before {
+        width: 200px;
+        height: 1px;
+    }
+}
