@@ -1,5 +1,5 @@
 @use "/src/sass/base/variables.scss" as *;
-
+@use "/src/sass/base/animation.scss" as *;
 .form-block {
     padding-top: 60px;
     &__img {
@@ -96,6 +96,7 @@
                 position: absolute;
                 right: 0;
                 bottom: 0;
+                animation: rotate360 3s;
             }
         }
     }
