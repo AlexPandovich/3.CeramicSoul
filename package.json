@@ -15,7 +15,8 @@
     "devDependencies": {
         "postcss-pxtorem": "^6.1.0",
         "sass-embedded": "^1.93.2",
-        "vite": "^7.1.7"
+        "vite": "^7.1.7",
+        "vite-plugin-imagemin": "^0.6.1"
     },
     "dependencies": {
         "just-validate": "^4.3.0",
