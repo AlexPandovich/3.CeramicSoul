@@ -198,13 +198,15 @@
                     </p>
                     <form action="#" class="newsletter-form">
                         <input
-                            class="newsletter-form-input"
+                            class="newsletter-form__input"
                             type="email"
                             id="email"
                             name="email"
                             placeholder="Enter your e-mail"
                             required
                         />
+                        <div class="newsletter-form__email--error"></div>
+
                         <label class="newsletter-form__checkbox-label">
                             <input
                                 class="newsletter-form__checkbox"
@@ -212,6 +214,7 @@
                                 name="terms"
                                 required
                             />
+
                             <span class="newsletter-form__checkbox-text"
                                 >I agree with the
                                 <a
@@ -221,6 +224,7 @@
                                 ></span
                             >
                         </label>
+                        <div class="newsletter-form__checkbox--error"></div>
 
                         <button
                             type="submit"

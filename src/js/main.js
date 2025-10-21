@@ -2,7 +2,7 @@ import '/src/sass/style.scss'
 
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
-
+import JustValidate from 'just-validate';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -70,3 +70,71 @@ try {
     // Показываем первый контент при загрузке
     contents.forEach((c, i) => (c.style.display = i === 0 ? "flex" : "none"));
 } catch (e) { }
+
+try {
+    const validator = new JustValidate('.question-form');
+
+    validator.addField('#name', [
+        {
+            rule: 'required',
+        },
+        {
+            rule: 'minLength',
+            value: 3,
+        },
+        {
+            rule: 'maxLength',
+            value: 15,
+        },
+    ]).addField('#email', [
+        {
+            rule: 'required',
+        },
+        {
+            rule: 'email',
+        },
+    ]).addField('#question', [
+        {
+            rule: 'required',
+        },
+        {
+            rule: 'minLength',
+            value: 3,
+        },
+    ], {
+        errorsContainer: ".error-message"
+    }).addField('#checkbox', [
+        {
+            rule: 'required',
+        },
+    ], {
+        errorsContainer: '.checkbox-error-message'
+    })
+
+} catch (e) {
+
+}
+
+try {
+    const validator = new JustValidate('.newsletter-form');
+
+    validator.addField('#email', [
+        {
+            rule: 'required',
+        },
+        {
+            rule: 'email',
+        },
+    ], {
+        errorsContainer: '.newsletter-form__email--error'
+    }).addField('.newsletter-form__checkbox', [
+        {
+            rule: 'required',
+        },
+    ], {
+        errorsContainer: '.newsletter-form__checkbox--error'
+    })
+
+} catch (e) {
+
+}
